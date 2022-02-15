@@ -1,0 +1,26 @@
+The pseudo code of MiniMax algorithm looks like-
+
+at first we make a fun. called MiniMax ;
+
+then we evaluate depth 
+
+we check if the depth is equal to 0 ;
+
+then we return  
+
+In the next step we perform these operations  with Max
+
+  we set the Max to minus infinity,
+
+and the Min to plus infinity ,
+
+we continue to do this until we reaches to the depth node. Once we reach there we just calculate the  value of Min and Max and we update the value of these Min and Max according to the question . 
+
+Suppose we are evaluating for Max that is alpha we check for the value of the node whether it is greater than minus infinity.
+
+then we update max and similarly we check for Min that is beta we check for the value of the node whether it is less than infinity.
+
+then we update the Min 
+
+We prun the nodes in case alpha is greater than or equal to beta. 
+

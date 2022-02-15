@@ -1,0 +1,56 @@
+Pseudo code of the A* star algorithm looks like :
+
+step 1- we first initialize the list called OpenList.
+
+step 2- then we initialize the 2nd list which is ClosedList.
+
+step 3- after that we check 
+
+      while( OpenList != empty){  // while loop starts here.     
+
+         then we find the least node say x from the OpenList and we name it as a;
+
+          thereafter we do pop operation on a and then we close the OpenList;
+
+           then we generate the 8 child of a and we call father to a, means a = father;
+
+          Now for each child we do the following operation-// for loop starts here
+
+         if(child == goal)
+
+          then we stop searching here;
+
+}
+
+ now,we do the following-
+
+child.goal = a.goal + the distance between the child and a;
+
+child.x = distance from the goal to the child( the same can be done by implementing heuristic function also or we can do the same via Manhattan distance or by euclidean distance 
+
+ then we do this
+
+child.b = child . goal + child.x;
+
+
+
+ we evaluate if  a node is having the exact same position as of child and that too in the OpenList  , that has a lower x than the child , then we just skip this child 
+
+
+
+we check if a node is having the exact same position as of child and that is in the ClosedList, that has a lower x than the child , we now  skip the the child and we add this node in the OpenList ;
+
+end; // for loop ends here.
+
+step 4;
+
+Now  pushing a in the ClosedList;
+
+end ; // while loop ends here.
+
+
+
+
+
+
+

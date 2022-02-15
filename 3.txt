@@ -1,0 +1,23 @@
+ Pseudo code for MiniMax algorithm looks like this-
+
+at first we make a function called MiniMax.
+
+then we set the top node if it max node we put the value of max as minus infinity and min as plus infinity and we start traversing all the nodes from the most left side of the MiniMax .
+
+we put the same value for mini and max to all the nodes until we reach to the depth . 
+
+Then we evaluate
+
+if the function is max then we are expected to update the value of alpha(max) we check if the value of nodes are maximum than minus infinity.
+
+we update the max,
+
+similarly we check for the mini , in this case we update the value of beta(mini) we check if the value of nodes are minimum than infinity.
+
+then update the min ;
+
+we check for all the nodes and update the value accordingly. 
+
+whenever we found that alpha >= beta ( max >= min) we prun that node . 
+
+Doing the same we traverse each nodes until we reaches at the top .
